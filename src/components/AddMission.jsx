@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavBar } from './NavBar'
 
 const AddMission = () => {
     return (
@@ -8,6 +9,7 @@ const AddMission = () => {
                 minHeight: "100vh"
             }}
         >
+            <NavBar/>
             <div className="container py-5">
 
                 <div className="row justify-content-center">
@@ -46,7 +48,7 @@ const AddMission = () => {
                                         <input
                                             type="text"
                                             className="form-control"
-                                            placeholder="Enter Mission ID"
+                                            
                                         />
                                     </div>
 
@@ -57,7 +59,6 @@ const AddMission = () => {
                                         <input
                                             type="text"
                                             className="form-control"
-                                            placeholder="Enter Mission Name"
                                         />
                                     </div>
 
@@ -68,7 +69,6 @@ const AddMission = () => {
                                         <input
                                             type="text"
                                             className="form-control"
-                                            placeholder="Enter Agency"
                                         />
                                     </div>
 
@@ -79,7 +79,6 @@ const AddMission = () => {
                                         <input
                                             type="text"
                                             className="form-control"
-                                            placeholder="Enter Launch Vehicle"
                                         />
                                     </div>
 
@@ -90,7 +89,6 @@ const AddMission = () => {
                                         <input
                                             type="text"
                                             className="form-control"
-                                            placeholder="Enter Destination"
                                         />
                                     </div>
 
@@ -98,12 +96,14 @@ const AddMission = () => {
                                         <label className="form-label fw-semibold">
                                             Mission Type
                                         </label>
-                                        <input
-                                            type="text"
-                                            className="form-control"
-                                            placeholder="Orbiter / Rover / Satellite"
-                                        />
+                                        <select className="form-select">
+                                            <option selected>Select</option>
+                                            <option>Orbitor</option>
+                                            <option>Rover</option>
+                                            <option>Satellites</option>
+                                        </select>
                                     </div>
+
 
                                     <div className="col-md-6">
                                         <label className="form-label fw-semibold">
@@ -112,7 +112,6 @@ const AddMission = () => {
                                         <input
                                             type="number"
                                             className="form-control"
-                                            placeholder="Enter Budget"
                                         />
                                     </div>
 
@@ -123,7 +122,6 @@ const AddMission = () => {
                                         <input
                                             type="number"
                                             className="form-control"
-                                            placeholder="Enter Launch Year"
                                         />
                                     </div>
 
@@ -132,7 +130,7 @@ const AddMission = () => {
                                             Status
                                         </label>
                                         <select className="form-select">
-                                            <option selected>Select Status</option>
+                                            <option selected>Select</option>
                                             <option>Planned</option>
                                             <option>Upcoming</option>
                                             <option>Active</option>
@@ -147,7 +145,6 @@ const AddMission = () => {
                                         <input
                                             type="url"
                                             className="form-control"
-                                            placeholder="Enter Image URL"
                                         />
                                     </div>
 
