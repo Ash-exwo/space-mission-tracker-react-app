@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import AddMission from './components/AddMission'
 import SearchMission from './components/SearchMission'
 import DeleteMission from './components/DeleteMission'
+import ViewAllMissions from './components/ViewAllMissions'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
       <Route path='/' element={<AddMission/>}/>
       <Route path='/search' element={<SearchMission/>}/>
       <Route path='/delete' element={<DeleteMission/>}/>
+      <Route path='/viewall' element={<ViewAllMissions/>}/>
     </Routes>
     </BrowserRouter>
     </>
